@@ -47,7 +47,7 @@ aside {
   z-index: 900; /* Lower than nav */
   /* box-shadow: -1px 0px 7px 1px rgba(88,85,77,0.74); */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 0 8px rgba(255, 255, 255, 0.05);
-  padding: 0.25vw;
+  padding: 0.2vw;
 }
 /* Toggle Button Styles */
 .toggle-btn {
@@ -136,7 +136,7 @@ hr{
 }
 
 .main-container {
-  margin-left: 34vw;
+  margin-left: 32vw;
   margin-top: 23vh;
   width:47vw;
   background-color: rgb(48, 44, 45);
