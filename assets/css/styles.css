@@ -136,13 +136,13 @@ hr{
 }
 
 .main-container {
-  margin-left: 35vw;
-  margin-top: 23vh;
-  width:47vw;
+  position: absolute;
+  top: 23vh;
+  left: 34.85vw;
+  right: 15vw;
   background-color: rgb(48, 44, 45);
   color: antiquewhite;
   border-radius: 20px;
-  position: absolute;
   padding: 20px;
   font-family: 'Poppins', sans-serif;
   text-align: justify;
