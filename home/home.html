@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Home</title>
+</head>
+<body class="text-md lg:text-xl bg-sky-200 font-normal text-slate-600">
+    <div class="container mx-auto px-5">
+        <nav class="relative  after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"></nav>
+        <!-- NAVIGATION -->
+            <div class="mx-auto  px-1 sm:px-3  bg-sky-500 rounded-b-md sticky top-0 z-50">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <!-- Mobile menu button-->
+                        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-3 text-white hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-white">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        </button>
+                    </div>
+                    <!-- <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
+                        <div class="flex shrink-0 items-center sm:mr-auto">
+                            <img src="images/logo 3.png" alt="Your Company" class="h-10 w-auto" />
+                        </div>
+                        <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <a href="#" aria-current="page" class="rounded-md  px-3 py-2 text-md font-medium text-white">Home</a>
+                            <a href="#" class="rounded-md px-3 py-2 text-md font-medium text-white hover:bg-white/5 hover:text-white">About</a>
+                            <a href="#" class="rounded-md px-3 py-2 text-md font-medium text-white hover:bg-white/5 hover:text-white">Projects</a>
+                            <a href="#" class="rounded-md px-3 py-2 text-md font-medium text-white hover:bg-white/5 hover:text-white">Resume</a>
+                            <a href="#" class="rounded-md px-3 py-2 text-md font-medium text-white hover:bg-white/5 hover:text-white">Blogs</a>
+                        </div>
+                        </div>
+                    </div> -->
+
+                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
+                    <!-- Logo -->
+                    <div class="flex shrink-0 items-center sm:mr-auto">
+                        <img src="../images/logo 3.png" alt="Your Company" class=" h-8 md:h-10 w-auto" />
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-2 md:space-x-4">
+                        
+                        <!-- Each link with icon -->
+                        <a href="home.html"
+                        aria-current="page"
+                        class="relative rounded-md px-3 py-2 text-md font-medium text-white
+                                flex items-center space-x-2
+                                after:absolute after:left-0 after:bottom-0 after:h-1 after:w-0
+                                after:bg-slate-700 after:transition-all after:duration-300
+                                hover:after:w-full">
+                            
+                            <img src="../images/home-outline.svg"
+                                alt="Home"
+                                class="hidden md:block md:h-6 w-auto max-w-full">
+                            <span>Home</span>
+                        </a>
+
+                        <a href="../about/about.html"
+                        aria-current="page"
+                        class="relative rounded-md px-3 py-2 text-md font-medium text-white
+                                flex items-center space-x-2
+                                after:absolute after:left-0 after:bottom-0 after:h-1 after:w-0
+                                after:bg-slate-700 after:transition-all after:duration-300
+                                hover:after:w-full">
+                            
+                            <img src="../images/about-outline.svg"
+                                alt="About"
+                                class="hidden md:block md:h-6 w-auto max-w-full">
+                            <span>About</span>
+                        </a>
+
+                        <a href="#"
+                        aria-current="page"
+                        class="relative rounded-md px-3 py-2 text-md font-medium text-white
+                                flex items-center space-x-2
+                                after:absolute after:left-0 after:bottom-0 after:h-1 after:w-0
+                                after:bg-slate-700 after:transition-all after:duration-300
+                                hover:after:w-full">
+                            
+                            <img src="../images/project-outline.svg"
+                                alt="Projects"
+                                class="hidden md:block md:h-6 w-auto max-w-full">
+                            <span>Projects</span>
+                        </a>
+
+                        <a href="#"
+                        aria-current="page"
+                        class="relative rounded-md px-3 py-2 text-md font-medium text-white
+                                flex items-center space-x-2
+                                after:absolute after:left-0 after:bottom-0 after:h-1 after:w-0
+                                after:bg-slate-700 after:transition-all after:duration-300
+                                hover:after:w-full">
+                            
+                            <img src="../images/resume-outline.svg"
+                                alt="Resume"
+                                class="hidden md:block md:h-6 w-auto max-w-full">
+                            <span>Resume</span>
+                        </a>
+
+                        <a href="#"
+                        aria-current="page"
+                        class="relative rounded-md px-3 py-2 text-md font-medium text-white
+                                flex items-center space-x-2
+                                after:absolute after:left-0 after:bottom-0 after:h-1 after:w-0
+                                after:bg-slate-700 after:transition-all after:duration-300
+                                hover:after:w-full">
+                            
+                            <img src="../images/blog-outline.svg"
+                                alt="Blogs"
+                                class="hidden md:block md:h-6 w-auto max-w-full">
+                            <span>Blogs</span>
+                        </a>
+
+                    </div>
+                </div>
+                </div>
+
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <button type="button" class="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">View notifications</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="h-7">
+                        <path d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    </button>
+
+                    <!-- Profile dropdown -->
+                    <el-dropdown class="relative ml-3">
+                    <button class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+                        <span class="absolute -inset-1.5"></span>
+                        <span class="sr-only">Open user menu</span>
+                        <img src="../images/ID.png" alt="" class="size-10 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+                    </button>
+
+                    <el-menu anchor="bottom end" popover class="w-48 origin-top-right rounded-md bg-gray-800 py-1 outline -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:outline-hidden">Your profile</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:outline-hidden">Settings</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:outline-hidden">Sign out</a>
+                    </el-menu>
+                    </el-dropdown>
+                </div>
+                </div>
+            </div>
+
+            <el-disclosure id="mobile-menu" hidden class="block sm:hidden border-t border-white/10 bg-sky-400">
+                <div class="space-y-1 px-2 pt-2 pb-3">
+                <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                <a href="home.html" aria-current="page" class="block rounded-md px-3 py-2 text-base font-medium text-white">Home</a>
+                <a href="../about/about.html" class="block rounded-md px-3 py-2 text-md font-medium text-white hover:bg-white/5 hover:text-white">About</a>
+                <a href="#" class="block rounded-md px-3 py-2 text-md font-medium text-white hover:bg-white/5 hover:text-white">Projects</a>
+                <a href="#" class="block rounded-md px-3 py-2 text-md font-medium text-white hover:bg-white/5 hover:text-white">Resume</a>
+                <a href="#" class="block rounded-md px-3 py-2 text-md font-medium text-white hover:bg-white/5 hover:text-white">Blogs</a>
+                </div>
+            </el-disclosure>
+        </nav>
+        <!-- HERO SECTION -->
+        <header>
+            <section
+                id="header"
+                class="min-h-[calc(100vh-4rem)]
+                    grid lg:grid-cols-2
+                    justify-items-center items-center
+                    mb-8
+                    text-center lg:text-left">
+                <div class="text-center lg:text-left">
+                    <img class=" w-35 lg:w-48 mb-4 rounded-lg mt-15 lg:mt-0" src="../images/Vision to Reality Logo.png" alt="vision-logo">
+
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-8">
+                        Turning
+                        <span class="bg-gradient-to-r from-sky-400 to-blue-700 bg-clip-text text-transparent">
+                        Ideas
+                        </span>
+                        into
+                        <span class="bg-gradient-to-r from-sky-500 to-blue-700 bg-clip-text text-transparent">
+                        Impact
+                        </span>
+                    </h1>
+
+                    <p class="mb-8 leading-6 md:leading-8 text-center lg:text-left">
+                        Stepping into the future where ideas shape the digital world, where passion ignites creativity,
+                        logical thinking ensures clarity, innovation drives progress, and perseverance secures success.
+                    </p>
+
+                    <ul class="flex gap-6 mb-8 justify-center lg:justify-start">
+                        <li>
+                        <a class="bg-sky-500 hover:bg-sky-700 text-white px-4 py-2 md:px-8 md:py-4 rounded-md inline-block text-center nowrap"
+                            href="#about-me">
+                            Get to Know Me
+                        </a>
+                        </li>
+                        <li>
+                        <a class="bg-slate-400 hover:bg-slate-500 text-white px-4 py-2 md:px-8 md:py-4 rounded-md inline-block text-center"
+                            href="#contacts">
+                            Let’s Connect
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <img class="w-5/6" src="../images/designing.svg" alt="girl-facing-a-pc">
+            </section>
+        </header>
+        <main>
+            <section id="about-me" class="xl:h-screen grid xl:grid-cols-2 justify-items-center items-center sm: mb-8">
+                <img class="w-5/6 order-2 xl:order-1" src="../images/undraw_typing-code_6t2b (1).svg" alt="woman-typing-code">
+                <div class="order-1 xl:order-2 text-center lg:text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 tracking-tight mb-6">About Me</h2>
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-800 tracking-tight mb-6">Hi! I am <span class="bg-gradient-to-r from-sky-500 to-blue-700 bg-clip-text text-transparent">Joemalyn Joy Salahog</span></h3>
+                    <p class="mb-8 leading-6 md:leading-8">I’m an aspiring Web Developer who loves turning ideas into responsive, user‑friendly designs. My journey into tech has led me to explore modern tools like Tailwind CSS, while building a strong foundation in JavaScript and React to create dynamic, interactive websites and applications. <br> <br>
+
+                    I’m currently focused on mastering front‑end development and expanding my skills into cloud technologies. <br> <br>
+
+                    My key areas of interest include building responsive websites and web applications, designing scalable solutions, and integrating cloud services into modern development workflows. <br> <br>
+
+                    Whenever possible, I enjoy experimenting with JavaScript and React, applying responsive design principles, and preparing myself to contribute to projects that shape the future of technology.</p>
+                </div>
+            </section>
+        
+            <section id="contacts" class="flex justify-center mt-0 sm:mt-16 mb-8 xl:mb-64 ">
+                <div class="bg-sky-500 max-w-3xl rounded-md p-2 lg:p-6 xl:p-12 text-white text-center
+                shadow-lg shadow-sky-900/20 mt-0">
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-pretty mb-4">Reach Me On</h2>
+                    <p class="mb-4">Feel free to connect through any of the platforms below.</p>
+                    <ul class="flex justify-center gap-6">
+                        <li><a href="https://www.instagram.com/joem.ski/" target="_blank" rel="noopener noreferrer"><img class=" size-7 md:size-11 hover:scale-110 transition duration-300" src="../images/instagram.svg" alt="instagram logo" ></a></li>
+                        <li><a href="https://www.facebook.com/joemalynjoy.salahog.1" target="_blank" rel="noopener noreferrer"><img class="size-7 md:size-11 hover:scale-110 transition duration-300" src="../images/facebook.svg" alt="facebook logo" ></a></li>
+                        <li><a href="https://www.linkedin.com/in/joemalyn-joy-salahog-434176174/" target="_blank" rel="noopener noreferrer"><img class="size-7 md:size-11 hover:scale-110 transition duration-300" src="../images/linkedin.svg" alt="linkedin logo" ></a></li>
+                        <li><a href="https://github.com/joemalynsalahog" target="_blank" rel="noopener noreferrer"><img class="size-7 md:size-11 hover:scale-110 transition duration-300" src="../images/github-home.svg" alt="github-logo" ></a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>            
+        <footer class="sticky bottom-0 bg-sky-500 text-white py-2 text-center shadow-lg shadow-sky-900/20 rounded-t-md">
+        <p class="text-sm">&copy; 2025 Joemalyn Joy Salahog. All rights reserved.</p>
+        </footer>
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</body>
+</html>
+
