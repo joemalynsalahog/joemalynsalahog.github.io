@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-about.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>About</title>
 </head>
@@ -201,8 +201,8 @@
                 </div>
 
                 <!-- SECTION 1: Chemist -->
-                <section class="relative grid lg:grid-cols-2 gap-3 items-center pl-10 sm:pl-16 pt-4 pb-0 pr-4 sm:pr-16" >
-                    <div class="w-full bg-gray-300 rounded-3xl p-4 sm:p-6 shadow-md border-l-4 border-sky-600">
+                <section  class="relative grid lg:grid-cols-2 gap-3 items-center pl-10 sm:pl-16 pt-4 pb-0 pr-4 sm:pr-16" >
+                    <div class="w-full bg-gray-300 rounded-3xl p-4 sm:p-6 shadow-md border-l-4 border-sky-600 slide-left">
                         <p class="font-scrapbook text-xl md:text-2xl text-slate-700 leading-relaxed max-w-prose tracking-wide ">
                         <span class="font-bold">H</span>i everyone!👋<br>
                         I’m Joemalyn Joy Salahog from the Philippines. I’m a Chemical Engineer with experience in Product Development, Technical, and QA roles, which helped me develop strong analytical, troubleshooting, and critical thinking skills.
@@ -219,7 +219,7 @@
                 <!-- SECTION 2: Transition -->
                 <section class="relative grid lg:grid-cols-2 gap-3 items-center pl-10 sm:pl-16 pt-0 pb-0 pr-4 sm:pr-16">
 
-                    <div class="w-full bg-gray-300  rounded-2xl p-4 sm:p-6 shadow-md border-l-4 border-sky-600 order-3 lg:order-4">
+                    <div id="transition-section" class="w-full bg-gray-300  rounded-2xl p-4 sm:p-6 shadow-md border-l-4 border-sky-600 order-3 lg:order-4 slide-right">
                         <p class="font-scrapbook text-xl md:text-2xl tracking-wide text-slate-700 leading-relaxed max-w-prose tracking-wide ">
                         <span class="font-bold">W</span>hile exploring databases and websites at work, I became curious about how they were built. That curiosity grew into a passion for web development, where creativity meets logic. This inspired me to transition into front-end development, continuously improving my skills through hands-on projects and self-learning.
                         </p>
@@ -235,7 +235,7 @@
 
                 <!-- SECTION 3: Developer -->
                 <section class="relative grid lg:grid-cols-2 gap-3 items-center pl-10 sm:pl-16 pt-0 pr-4 sm:pr-16">
-                    <div class="w-full bg-gray-300 rounded-2xl p-4 sm:p-6 shadow-md border-l-4 border-sky-600">
+                    <div id="developer-section" class="w-full bg-gray-300 rounded-2xl p-4 sm:p-6 shadow-md border-l-4 border-sky-600 slide-left">
                         <p class="font-scrapbook text-xl md:text-2xl tracking-wide text-slate-700 leading-relaxed max-w-prose">
                         <span class="font-bold">O</span>utside of work, I enjoy turning ideas into designs through coding. I’m building my personal portfolio, developing projects from concept to deployment, and exploring ways to enhance my skills.
                         <br>
@@ -286,6 +286,12 @@
                             <span class="text-white font-medium whitespace-nowrap">Tailwind CSS</span>
                         </div>
 
+                        <!-- C++ -->
+                        <div class="flex items-center justify-center gap-2 bg-sky-500 py-2 px-4 rounded-full flex-none">
+                            <img class="size-8" src="../images/c-logo-svg-vector.svg" alt="C++ Logo">
+                            <span class="text-white font-medium whitespace-nowrap">C++</span>
+                        </div>
+
                         <!-- React -->
                         <div class="flex items-center justify-center gap-2 bg-sky-500 py-2 px-4 rounded-full flex-none">
                             <img class="size-8" src="../images/react.svg" alt="React Logo">
@@ -325,6 +331,11 @@
                         <div class="flex items-center justify-center gap-2 bg-sky-500 py-2 px-4 rounded-full flex-none">
                             <img class="size-8" src="../images/vs-code.svg" alt="vs-code">
                             <span class="text-white font-medium whitespace-nowrap">VS Code</span>
+                        </div>
+                        <!-- Power BI -->
+                        <div class="flex items-center justify-center gap-2 bg-sky-500 py-2 px-4 rounded-full flex-none">
+                            <img class="size-8" src="../images/microsoft-power-bi.svg" alt="power-bi">
+                            <span class="text-white font-medium whitespace-nowrap">Microsoft Power BI</span>
                         </div>
 
                         <!-- Chrome
@@ -375,6 +386,7 @@
         </footer>
     </div> 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script src="script-about.js"></script>
 </body>
 </html>
 

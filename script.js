@@ -1,4 +1,3 @@
-
 window.addEventListener("load", () => {
     const ideas = document.getElementById("ideas");
     const impact = document.getElementById("impact");
@@ -12,4 +11,10 @@ window.addEventListener("load", () => {
         impact.style.opacity = "1";
         impact.style.transform = "translateY(0)";
     }, 800);
+});
+
+const cover = document.getElementById("paperCover");
+
+cover.addEventListener("click", () => {
+    cover.classList.add("open");
 });
