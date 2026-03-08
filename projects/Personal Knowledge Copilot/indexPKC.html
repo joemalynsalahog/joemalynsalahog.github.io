@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylePKC.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Personal Knowledge Copilot</title>
+</head>
+<body>
+    <section class="h-screen flex bg-gray-50">
+
+    <!-- Sidebar -->
+    <aside class="w-72 bg-white border-r border-gray-200 flex flex-col p-4 overflow-y-auto">
+        <div class="mb-6">
+        <h1 class="text-2xl font-bold text-slate-800">🧠 Knowledge Copilot</h1>
+        </div>
+
+        <!-- Sidebar buttons -->
+        <nav class="flex flex-col space-y-2">
+        <button class="flex items-center p-2 rounded hover:bg-gray-100">
+            <span class="mr-3 text-xl">📄</span>
+            <span>Documents</span>
+        </button>
+        <button class="flex items-center p-2 rounded hover:bg-gray-100">
+            <span class="mr-3 text-xl">💬</span>
+            <span>Chats</span>
+        </button>
+        <button class="flex items-center p-2 rounded hover:bg-gray-100">
+            <span class="mr-3 text-xl">✨</span>
+            <span>Summary</span>
+        </button>
+        <button class="flex items-center p-2 rounded hover:bg-gray-100">
+            <span class="mr-3 text-xl">❓</span>
+            <span>Ask AI</span>
+        </button>
+        <button class="flex items-center p-2 rounded hover:bg-gray-100">
+            <span class="mr-3 text-xl">🧠</span>
+            <span>Insights</span>
+        </button>
+        <button class="flex items-center p-2 rounded hover:bg-gray-100">
+            <span class="mr-3 text-xl">📌</span>
+            <span>Notes</span>
+        </button>
+        <button class="flex items-center p-2 rounded hover:bg-gray-100">
+            <span class="mr-3 text-xl">⬇️</span>
+            <span>Export</span>
+        </button>
+        <button class="flex items-center p-2 rounded hover:bg-gray-100">
+            <span class="mr-3 text-xl">⚙️</span>
+            <span>Settings</span>
+        </button>
+        </nav>
+    </aside>
+
+    <!-- Main Content / Chat + PDF -->
+    <main class="flex-1 p-6 flex flex-col">
+        
+        <!-- PDF Upload -->
+        <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700 mb-2">Upload PDF</label>
+        <input type="file" accept="application/pdf" class="block w-full text-sm text-gray-500 border border-gray-300 rounded p-2">
+        </div>
+
+        <!-- Chat Box -->
+        <div class="flex-1 border border-gray-300 rounded p-4 bg-white overflow-y-auto" id="chatBox">
+        <p class="text-gray-500 text-center mt-10">AI chat will appear here after uploading a PDF</p>
+        </div>
+
+        <!-- Input / Prompt -->
+        <div class="mt-4 flex">
+        <input type="text" placeholder="Ask a question..." class="flex-1 border border-gray-300 rounded-l px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <button class="bg-blue-500 text-white px-4 rounded-r hover:bg-blue-600">Send</button>
+        </div>
+
+    </main>
+
+    </section>   
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script src="scriptPKC.js"></script>
+</body>
+</html>
