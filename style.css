@@ -78,7 +78,6 @@
     top:8px;
     left:50%;
     transform:translateX(-50%);
-    box-shadow:
-        0 3px 6px rgba(0,0,0,0.35);
+    box-shadow:0 3px 6px rgba(0,0,0,0.35);
     z-index:30;
 }
